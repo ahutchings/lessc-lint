@@ -4,7 +4,7 @@
   "description": "linter for less",
   "main": "index.js",
   "bin": {
-    "lessc-lint": "bin/lessc-lint"
+    "lessc-lint": "bin/lessc-lint.js"
   },
   "keywords": [
     "less",
