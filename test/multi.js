@@ -5,15 +5,16 @@ var concat = require('concat-stream');
 test('glob', function (t) {
   t.plan(3);
 
-  var ps = spawn(process.execPath, [
-    'bin/lessc-lint',
-    'test/glob/**/*.less'
+  var ps = spawn('bin/lessc-lint.js', [
+    'test/multi/error1.less',
+    'test/multi/valid.less',
+    'test/multi/subdir/error2.less'
   ]);
 
   ps.stdout.pipe(concat(function (stdout) {
-    var expectedStdout = "test/glob/error1.less: line 2, col 27, Error - Expected ')'" +
+    var expectedStdout = "test/multi/error1.less: line 2, col 27, Error - Expected ')'" +
       '\n' +
-      'test/glob/subdir/error2.less: line 1, col 0, Error - Unrecognised input' +
+      'test/multi/subdir/error2.less: line 1, col 0, Error - Unrecognised input' +
       '\n' +
       '\n' +
       '2 problems' +

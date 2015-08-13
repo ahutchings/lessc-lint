@@ -8,8 +8,7 @@
   },
   "keywords": [
     "less",
-    "lint",
-    "glob"
+    "lint"
   ],
   "scripts": {
     "test": "tap test/*.js"
@@ -25,7 +24,7 @@
     "tap": "^1.3.2"
   },
   "dependencies": {
-    "glob": "^5.0.14",
-    "less": "^2.5.1"
+    "less": "^2.5.1",
+    "minimist": "^1.1.3"
   }
 }

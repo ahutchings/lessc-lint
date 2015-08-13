@@ -5,8 +5,7 @@ var concat = require('concat-stream');
 test('glob', function (t) {
   t.plan(3);
 
-  var ps = spawn(process.execPath, [
-    'bin/lessc-lint',
+  var ps = spawn('bin/lessc-lint.js', [
     'test/single_error/error.less'
   ]);
 
