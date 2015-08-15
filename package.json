@@ -6,6 +6,10 @@
   "bin": {
     "lessc-lint": "bin/lessc-lint.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ahutchings/lessc-lint.git"
+  },
   "keywords": [
     "less",
     "lint"
